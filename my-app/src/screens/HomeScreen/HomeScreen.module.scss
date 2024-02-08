@@ -1,0 +1,37 @@
+@use 'sass:math';
+
+@debug math.random(); // 0.2821251858
+@debug math.random(); // 0.6221325814
+$base-distance: 10px;
+
+.home-screen {
+    border: 1px solid black;
+    height: 100vh;
+    
+    &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 16px;
+        border: solid 1px red;
+        border-radius: 8px;
+        height: 90%;
+        width: 80%;
+        margin: 20px auto;
+        background-color: pink;
+
+        &-buttons {
+            width: 80%;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: column; 
+            gap: 16px;
+            position: relative;
+
+            .shy-button {
+                position: absolute;
+                transition: .5s;
+            }
+        }
+    }
+}
