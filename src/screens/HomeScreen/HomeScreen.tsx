@@ -23,7 +23,7 @@ const HomeScreen = () => {
 
     // Hint counter
     const [hintCounter, setHintCounter] = useState<number>(0);
-    const max: number = 200;
+    const max: number = 150;
 
     // Yes button click tracker
     const [yesClicked, setYesClicked] = useState<boolean>(false);
